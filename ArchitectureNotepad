@@ -1,0 +1,234 @@
+Features:
+	Two players no ai, players take turns
+		- bonus feature ai support
+	Restart after game end
+	Player names (names will just act as login for possible persistence)
+	Player score tracked from one game to another (non-persistent, only for game session)
+		- bonus feature persistent state
+	Help / tutorial
+	Main Menu
+
+Tic Tac Toe state:
+	Player state:
+		Human players:
+			name
+			score
+	Board state:
+		3x3 grid of cells with either x or o
+	Game state:
+		whose turn is it?
+		what state is the game in?
+			- main menu
+			- playing
+				- getting initial input
+			- leaderboard
+			- viewing help
+		the board
+	Application state
+		Game state
+		Render layer
+		Input layer
+
+Functionality:
+	- Get input
+	- Print text to the screen
+	- Renderer that knows about the game state
+	
+	
+	
+Arcitecture
+
+
+
+
+
+
+Screens:
+---------------------------
+Main Menu:
+1. Play
+2. Leaderboard
+3. Help
+4. Options
+4. Exit
+
+abstract class Screen
+{
+	Run()
+}
+
+PlayGame : Screen
+{
+	override Run()
+}
+
+Leaderboard : Screen
+{
+	override Run()
+}
+
+Help : Screen
+{
+	override Run()
+	Exit()
+}
+
+States
+	Play Game
+	Leaderboards
+	Help
+
+Application
+
+	// current session of multiple games
+	Session session;
+	
+	// users selection determines which state class to use
+	Menu menu;
+	
+	// currently selected state
+	Screen screen;
+	
+	// executes state logic (essentially call state.Run() in a loop)
+	GameLoop()
+	
+
+Main()
+{
+	Application app;
+	app.Run();
+	
+	Application.Instance.Run();
+}
+
+----------------------------------
+**DIAMOND OF DEATH**
+
+		A
+	   / \
+      B   C
+       \ /
+        D	   
+
+
+class A
+{
+	void Foo();
+}
+
+class B : A
+{
+	override void Foo();
+};
+
+class C : A
+{
+	override void Foo();
+};
+
+class D : B, C
+{
+	override void Foo()
+	{
+	    base.Foo();
+	}
+};
+
+
+
+-----------------------------
+
+
+
+---------------------------------------------
+interface IApplicationState
+{
+    // returns the next state to be in
+	IApplicationState Run();
+	
+	InputManager input;
+	OutputManager output;
+};
+
+class MenuState : IApplicationState
+{
+	public MenuState(InputManager inputManager, OutputManager outputManager)
+	{
+		_inputManager = inputManager;
+		_outputManager = outputManager;
+	}
+
+    // going to output a menu and ask for user input
+	// once user picks input we're going to change screens to the corresponding user selection
+    override Run()
+	{
+		base.Run();
+		// do more stuff
+	}
+}
+
+class Singleton
+{
+	private static Singleton _singleInstance;
+
+	private Singleton() {}
+	
+	public static Singleton Instance 
+	{ 
+		get 
+		{ 
+			if (_singleInstance != null)
+			{
+				_singleInstance = new Singleton();
+			}
+		
+			return _singleInstance;
+		}
+	}
+	
+	public void SomeMethod()
+	{
+		// does some shit
+	}
+}
+
+Main()
+{
+	Singleton.Instance.SomeMethod();
+}
+
+class PlayingState : IApplicationState
+{
+    override Run();
+}
+
+class Application
+{
+	InputManager inputManager = new InputManager();
+	OutputManager outputManager = new OutputManager();
+	IApplicationState _state = new Menu(inputManager, outputManager);
+
+	public void Run()
+	{	
+		while (_state != null)
+		{
+			_state = _state.Run();
+		}
+	}
+}
+	
+new application
+do(
+display menu
+screen choose
+screen.executes
+)
+
+
+
+
+
+
+
+
+	
