@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace TicTacToeGame
+namespace TicTacToeGame.GameStates
 {
-    class Session
+    class SessionState
     {
     }
 }
