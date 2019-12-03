@@ -160,6 +160,44 @@ screen.executes
 
 
 
+----------------- My Architecture -----------------
+
+public void main()
+{ new application
+	currentState = menuState
+	
+	public abstract class ApplicationState
+	protected currentState {get; set;}
+	protected InputManager input = new InputManager();
+    protected OutputManager output = new OutputManager();
+	
+	
+	
+	public run()
+	{
+		
+
+public class SessionState : ApplicationState
+	public SessionState(input, output)
+	public Run()
+	public Update()
+	
+public class MenuState : ApplicationState
+	public MenuState(input, output)
+	public Run()
+
+public class LeaderboardState : ApplicationState
+	public LeaderboardState(input, output)
+	public Run()
+	
+public class HelpState : ApplicationState
+	public HelpState(input, output)
+	public Run()
+
+
+
+
+
 
 
 

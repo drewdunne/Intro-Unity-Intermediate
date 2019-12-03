@@ -1,10 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using TicTacToeGame.IO;
 
 namespace TicTacToeGame.GameStates
 {
-    class SessionState
+    class SessionState : ApplicationState
     {
+        public override ApplicationState Run(InputManager input, OutputManager output)
+        {
+            throw new NotImplementedException();
+        }
+
     }
 }

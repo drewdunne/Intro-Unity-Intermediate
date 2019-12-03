@@ -1,24 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\adunne\\source\\repos\\TicTacToe2\\TicTacToeGame.csproj": {}
+    "C:\\Users\\drewd\\source\\repos\\ConsoleApp1\\TicTacToeGame.csproj": {}
   },
   "projects": {
-    "C:\\Users\\adunne\\source\\repos\\TicTacToe2\\TicTacToeGame.csproj": {
+    "C:\\Users\\drewd\\source\\repos\\ConsoleApp1\\TicTacToeGame.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\adunne\\source\\repos\\TicTacToe2\\TicTacToeGame.csproj",
+        "projectUniqueName": "C:\\Users\\drewd\\source\\repos\\ConsoleApp1\\TicTacToeGame.csproj",
         "projectName": "TicTacToeGame",
-        "projectPath": "C:\\Users\\adunne\\source\\repos\\TicTacToe2\\TicTacToeGame.csproj",
-        "packagesPath": "C:\\Users\\adunne\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\adunne\\source\\repos\\TicTacToe2\\obj\\",
+        "projectPath": "C:\\Users\\drewd\\source\\repos\\ConsoleApp1\\TicTacToeGame.csproj",
+        "packagesPath": "C:\\Users\\drewd\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\drewd\\source\\repos\\ConsoleApp1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\adunne\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\drewd\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -27,8 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://www.myget.org/F/discord-net/api/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.0": {

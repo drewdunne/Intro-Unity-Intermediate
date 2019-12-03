@@ -4,7 +4,7 @@ using System.Text;
 
 namespace TicTacToeGame.IO
 {
-    class InputManager
+    public class InputManager
     {
         public string PromptForInput(string prompt)
         {
