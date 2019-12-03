@@ -38,11 +38,6 @@ Functionality:
 	
 Arcitecture
 
-
-
-
-
-
 Screens:
 ---------------------------
 Main Menu:
@@ -52,22 +47,22 @@ Main Menu:
 4. Options
 4. Exit
 
-abstract class Screen
+abstract class State
 {
 	Run()
 }
 
-PlayGame : Screen
+PlayGame : State
 {
 	override Run()
 }
 
-Leaderboard : Screen
+Leaderboard : State
 {
 	override Run()
 }
 
-Help : Screen
+Help : State
 {
 	override Run()
 	Exit()
@@ -87,7 +82,7 @@ Application
 	Menu menu;
 	
 	// currently selected state
-	Screen screen;
+	State state;
 	
 	// executes state logic (essentially call state.Run() in a loop)
 	GameLoop()
@@ -101,42 +96,6 @@ Main()
 	Application.Instance.Run();
 }
 
-----------------------------------
-**DIAMOND OF DEATH**
-
-		A
-	   / \
-      B   C
-       \ /
-        D	   
-
-
-class A
-{
-	void Foo();
-}
-
-class B : A
-{
-	override void Foo();
-};
-
-class C : A
-{
-	override void Foo();
-};
-
-class D : B, C
-{
-	override void Foo()
-	{
-	    base.Foo();
-	}
-};
-
-
-
------------------------------
 
 
 
@@ -167,31 +126,6 @@ class MenuState : IApplicationState
 	}
 }
 
-class Singleton
-{
-	private static Singleton _singleInstance;
-
-	private Singleton() {}
-	
-	public static Singleton Instance 
-	{ 
-		get 
-		{ 
-			if (_singleInstance != null)
-			{
-				_singleInstance = new Singleton();
-			}
-		
-			return _singleInstance;
-		}
-	}
-	
-	public void SomeMethod()
-	{
-		// does some shit
-	}
-}
-
 Main()
 {
 	Singleton.Instance.SomeMethod();
@@ -206,7 +140,7 @@ class Application
 {
 	InputManager inputManager = new InputManager();
 	OutputManager outputManager = new OutputManager();
-	IApplicationState _state = new Menu(inputManager, outputManager);
+	IApplicationState _state = new MenuState(inputManager, outputManager);
 
 	public void Run()
 	{	
@@ -223,6 +157,7 @@ display menu
 screen choose
 screen.executes
 )
+
 
 
 

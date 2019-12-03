@@ -1,0 +1,63 @@
+
+----------------------------------
+**DIAMOND OF DEATH**
+
+		A
+	   / \
+      B   C
+       \ /
+        D	   
+
+
+class A
+{
+	void Foo();
+}
+
+class B : A
+{
+	override void Foo();
+};
+
+class C : A
+{
+	override void Foo();
+};
+
+class D : B, C
+{
+	override void Foo()
+	{
+	    base.Foo();
+	}
+};
+
+
+
+-----------------------------
+
+class Singleton
+{
+	private static Singleton _singleInstance;
+
+	private Singleton() {}
+	
+	public static Singleton Instance 
+	{ 
+		get 
+		{ 
+			if (_singleInstance != null)
+			{
+				_singleInstance = new Singleton();
+			}
+		
+			return _singleInstance;
+		}
+	}
+	
+	public void SomeMethod()
+	{
+		// does some shit
+	}
+}
+

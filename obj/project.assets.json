@@ -8,23 +8,25 @@
     ".NETCoreApp,Version=v3.0": []
   },
   "packageFolders": {
-    "C:\\Users\\drewd\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\adunne\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\drewd\\source\\repos\\ConsoleApp1\\TicTacToeGame.csproj",
+      "projectUniqueName": "C:\\Users\\adunne\\source\\repos\\TicTacToe2\\TicTacToeGame.csproj",
       "projectName": "TicTacToeGame",
-      "projectPath": "C:\\Users\\drewd\\source\\repos\\ConsoleApp1\\TicTacToeGame.csproj",
-      "packagesPath": "C:\\Users\\drewd\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\drewd\\source\\repos\\ConsoleApp1\\obj\\",
+      "projectPath": "C:\\Users\\adunne\\source\\repos\\TicTacToe2\\TicTacToeGame.csproj",
+      "packagesPath": "C:\\Users\\adunne\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\adunne\\source\\repos\\TicTacToe2\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\"
+        "C:\\Microsoft\\Xamarin\\NuGet\\",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\drewd\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\adunne\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -33,7 +35,8 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {},
+        "https://www.myget.org/F/discord-net/api/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp3.0": {
