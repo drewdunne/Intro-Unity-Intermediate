@@ -1,0 +1,43 @@
+public class Application
+{
+}
+
+public abstract class State
+{
+	public State Run()
+	{
+		
+		protected Start()
+		protected Update ()
+
+	}
+	
+	public Start()
+	
+	public Update()
+	
+	
+}
+
+public class GameState : State
+{
+	
+}
+
+
+public class MenuState : State
+{
+	public MenuState(input, output)
+	{
+		switch (input.LastInput)
+		{
+			case (main)
+				_type = main;
+			
+		}
+			
+	}
+}
+
+
+

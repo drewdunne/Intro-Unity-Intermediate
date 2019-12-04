@@ -36,7 +36,51 @@ Functionality:
 	
 	
 	
-Arcitecture
+----------------- My Architecture -----------------
+
+public void main()
+{ new application
+	currentState = menuState
+	
+	public abstract class ApplicationState
+	protected currentState {get; set;}
+	protected InputManager input = new InputManager();
+    protected OutputManager output = new OutputManager();
+	
+	
+	
+	public run()
+	{
+		
+
+public class SessionState : ApplicationState
+	public SessionState(input, output)
+	public Run()
+	public Update()
+	
+public class MenuState : ApplicationState
+	public MenuState(input, output)
+	public Run()
+
+public class LeaderboardState : ApplicationState
+	public LeaderboardState(input, output)
+	public Run()
+	
+public class HelpState : ApplicationState
+	public HelpState(input, output)
+	public Run()
+
+
+
+
+--------- Thoughts --------------
+So, should a 'state' be able to print? No, that doesn't make sense to me. 'States' should have Screens, and the screens can print things.
+
+States have things which they 'send' to the screen, which then uses output manager to output the stuff.
+
+
+
+
 
 Screens:
 ---------------------------
@@ -158,41 +202,6 @@ screen choose
 screen.executes
 )
 
-
-
------------------ My Architecture -----------------
-
-public void main()
-{ new application
-	currentState = menuState
-	
-	public abstract class ApplicationState
-	protected currentState {get; set;}
-	protected InputManager input = new InputManager();
-    protected OutputManager output = new OutputManager();
-	
-	
-	
-	public run()
-	{
-		
-
-public class SessionState : ApplicationState
-	public SessionState(input, output)
-	public Run()
-	public Update()
-	
-public class MenuState : ApplicationState
-	public MenuState(input, output)
-	public Run()
-
-public class LeaderboardState : ApplicationState
-	public LeaderboardState(input, output)
-	public Run()
-	
-public class HelpState : ApplicationState
-	public HelpState(input, output)
-	public Run()
 
 
 

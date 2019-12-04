@@ -9,11 +9,12 @@ namespace TicTacToeGame
     {
         protected InputManager input = new InputManager();
         protected OutputManager output = new OutputManager();
-        private ApplicationState _currentState;
+        private ApplicationState _nextState;
 
         public virtual ApplicationState Run(InputManager input, OutputManager output)
         {
-            return _currentState;
+            output.Print()
+            return _nextState;
         }
     }
 }
