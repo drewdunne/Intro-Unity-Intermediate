@@ -5,12 +5,12 @@ using TicTacToeGame.IO;
 
 namespace TicTacToeGame.ApplicationStates
 {
-    public class SessionState : State
+    public abstract class State
     {
-        public override State Run(InputManager input, OutputManager output)
-        {
-            throw new NotImplementedException();
-        }
 
+        public virtual State Run(InputManager input, OutputManager output)
+        {
+            return this;
+        }
     }
 }

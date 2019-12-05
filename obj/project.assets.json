@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\drewd\\source\\repos\\ConsoleApp1\\TicTacToeGame.csproj",
+      "projectUniqueName": "M:\\Code\\TicTacToe2\\TicTacToeGame.csproj",
       "projectName": "TicTacToeGame",
-      "projectPath": "C:\\Users\\drewd\\source\\repos\\ConsoleApp1\\TicTacToeGame.csproj",
+      "projectPath": "M:\\Code\\TicTacToe2\\TicTacToeGame.csproj",
       "packagesPath": "C:\\Users\\drewd\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\drewd\\source\\repos\\ConsoleApp1\\obj\\",
+      "outputPath": "M:\\Code\\TicTacToe2\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"

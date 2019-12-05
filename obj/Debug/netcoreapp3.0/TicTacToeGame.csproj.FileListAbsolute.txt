@@ -9,3 +9,14 @@ C:\Users\drewd\source\repos\ConsoleApp1\obj\Debug\netcoreapp3.0\TicTacToeGame.As
 C:\Users\drewd\source\repos\ConsoleApp1\obj\Debug\netcoreapp3.0\TicTacToeGame.AssemblyInfo.cs
 C:\Users\drewd\source\repos\ConsoleApp1\obj\Debug\netcoreapp3.0\TicTacToeGame.dll
 C:\Users\drewd\source\repos\ConsoleApp1\obj\Debug\netcoreapp3.0\TicTacToeGame.pdb
+M:\Code\TicTacToe2\obj\Debug\netcoreapp3.0\TicTacToeGame.csprojAssemblyReference.cache
+M:\Code\TicTacToe2\obj\Debug\netcoreapp3.0\TicTacToeGame.AssemblyInfoInputs.cache
+M:\Code\TicTacToe2\obj\Debug\netcoreapp3.0\TicTacToeGame.AssemblyInfo.cs
+M:\Code\TicTacToe2\obj\Debug\netcoreapp3.0\TicTacToeGame.dll
+M:\Code\TicTacToe2\obj\Debug\netcoreapp3.0\TicTacToeGame.pdb
+M:\Code\TicTacToe2\bin\Debug\netcoreapp3.0\TicTacToeGame.exe
+M:\Code\TicTacToe2\bin\Debug\netcoreapp3.0\TicTacToeGame.deps.json
+M:\Code\TicTacToe2\bin\Debug\netcoreapp3.0\TicTacToeGame.runtimeconfig.json
+M:\Code\TicTacToe2\bin\Debug\netcoreapp3.0\TicTacToeGame.runtimeconfig.dev.json
+M:\Code\TicTacToe2\bin\Debug\netcoreapp3.0\TicTacToeGame.dll
+M:\Code\TicTacToe2\bin\Debug\netcoreapp3.0\TicTacToeGame.pdb

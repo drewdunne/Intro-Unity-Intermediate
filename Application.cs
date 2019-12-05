@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using TicTacToeGame.IO;
-using TicTacToeGame.GameStates;
+using TicTacToeGame.ApplicationStates;
 
 namespace TicTacToeGame
 {
@@ -10,5 +10,16 @@ namespace TicTacToeGame
     {
         InputManager inputManager = new InputManager();
         OutputManager outputManager = new OutputManager();
+
+        public void Run()
+        {
+            State currentState = new MenuState(MenuState.MenuID.MainMenu);
+
+            do
+            {
+                currentState = currentState.Run(inputManager, outputManager);
+
+            } while (currentState != null);
+        }
     }
 }

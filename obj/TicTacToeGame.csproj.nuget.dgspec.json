@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\drewd\\source\\repos\\ConsoleApp1\\TicTacToeGame.csproj": {}
+    "M:\\Code\\TicTacToe2\\TicTacToeGame.csproj": {}
   },
   "projects": {
-    "C:\\Users\\drewd\\source\\repos\\ConsoleApp1\\TicTacToeGame.csproj": {
+    "M:\\Code\\TicTacToe2\\TicTacToeGame.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\drewd\\source\\repos\\ConsoleApp1\\TicTacToeGame.csproj",
+        "projectUniqueName": "M:\\Code\\TicTacToe2\\TicTacToeGame.csproj",
         "projectName": "TicTacToeGame",
-        "projectPath": "C:\\Users\\drewd\\source\\repos\\ConsoleApp1\\TicTacToeGame.csproj",
+        "projectPath": "M:\\Code\\TicTacToe2\\TicTacToeGame.csproj",
         "packagesPath": "C:\\Users\\drewd\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\drewd\\source\\repos\\ConsoleApp1\\obj\\",
+        "outputPath": "M:\\Code\\TicTacToe2\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
