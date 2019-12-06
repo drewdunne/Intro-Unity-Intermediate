@@ -7,15 +7,13 @@ using TicTacToeGame.ApplicationStates;
 namespace TicTacToeGame.ApplicationStates
 {
 
-    public class MenuState : State, IMenu
+    public abstract class MenuState : State, IMenu
     {
-        public enum MenuID { MainMenu, Leaderboard, Help };
 
-        public MenuID ID;
 
-        public MenuState(MenuID type)
+        public MenuState()
         {            
-            ID = MenuID.MainMenu;
+
         }
 
     public override State Run(InputManager input, OutputManager output)
